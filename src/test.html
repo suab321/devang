@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+
+
+		<!------ Include the above in your HEAD tag ---------->
+		<style type="text/css">
+			 
+		.dropdown-menu > li.kopie > a {
+		  	padding-left:5px;
+		}
+
+		.dropdown-submenu {
+		  	position:relative;
+		}
+		.dropdown-submenu>.dropdown-menu {
+			 top:0;left:100%;
+			 margin-top:-6px;margin-left:-1px;
+			 -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+		}
+
+		.dropdown-submenu > a:after {
+			border-color: transparent transparent transparent #333;
+			border-style: solid;
+			border-width: 5px 0 5px 5px;
+			content: " ";
+			display: block;
+			float: right;  
+			height: 0;     
+			margin-right: -10px;
+			margin-top: 5px;
+			width: 0;
+		}
+
+		.dropdown-submenu:hover>a:after {
+		  	border-left-color:#555;
+		}
+
+		.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+			text-decoration: none;
+	      }  
+ 
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+class Greeting extends React.Component {
+    render() {
+        return (<p>HCheck now</p>);
+    }
+}
+ReactDOM.render(
+    <Greeting />,
+    document.getElementById('root')
+);
+</script>
+ <div id="app"></div>
+  
+    
+</body>
+</html>

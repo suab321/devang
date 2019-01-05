@@ -1,0 +1,108 @@
+.right .bm-burger-button{
+  display: none;
+}
+@media (max-width: 767px) {
+  body{
+    font-size: 14px;
+  }
+
+  #Top_bar{
+    display: none;
+  }
+
+  div#Menu_bar {
+      padding: 0px 0px;
+  }
+
+  .platform-img, .platform-txt {
+      display: block;
+  }
+
+  .platform-work p{
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+  ul.platform-list{
+    padding-left: 0px;
+  }
+
+  ul.platform-list li {
+    padding: 4px 15px;
+    width: 48%;
+  }
+
+  .right .bm-burger-button{
+    display: block;
+  }
+
+  .camp-templ {
+    padding: 9px 0px;
+  }
+
+  .box-sec{
+    margin-bottom: 40px;
+  }
+
+  section#RG-content-2 {
+    border-bottom: 1px solid #ccc;
+  }
+  #refr-a-fren {
+    padding: 0px 20px;
+  }
+  .social-links {
+    text-align: left;
+    padding-left: 0px;
+  }
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+}
+ 
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+}  
+
+

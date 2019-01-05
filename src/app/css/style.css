@@ -1,0 +1,652 @@
+/*
+Website Name: refergap
+Version: 0.1
+Theme URI:http://www.refergap.com/
+Description:online referal system
+Author:FilGap Crew
+Tags:four-columns, white
+Bootstrap:3.3.7
+Copyright:(c) 2017-2018 ReferGap.
+
+*****************************************************
+This file contains main CSS structure of theme. Do not change anything below
+unless it is necessary or you are aware of what you are doing
+To customize theme rename custom.dist.css to custom.css, copy css code
+from this file into custom.css and edit it.
+*/
+
+/******************************************************
+ 				Global Styling
+ ******************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900');
+@import url("fonts/stylesheet.css");
+
+body{ font-family: 'Lato', sans-serif; 
+	font-size: 17px;
+	color: #000;
+}
+
+h1, h1 a, h1 a:hover, .text-logo #logo {
+    color: #161922;
+    font-family: 'bariolbold';
+}
+
+h2, h2 a, h2 a:hover {
+    color: #000000;
+    font-family: 'bariolbold';
+    font-size: 1.85em;
+    line-height: 2em;
+}
+
+h2 span{
+	color: #de2314;
+}
+
+h3, h3 a, h3 a:hover {
+    color: #161922;
+}
+
+h4, h4 a, h4 a:hover {
+    color: #161922;
+}
+
+h5, h5 a, h5 a:hover {
+    color: #161922;
+	font-family: 'Lato', sans-serif;
+
+}
+
+h6, h6 a, h6 a:hover, a.content_link .title {
+    color: #161922;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+.num-sec {
+    color: #2f394e;
+    text-align: center;
+    padding: 30px;
+}
+
+.circle-box{
+	width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 27px 0 rgba(128, 128, 128, 0.51);
+    color: #2f394e;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0px auto;
+}
+
+.fancy-divider {
+    width: 50px;
+    border: 2px solid #2f394e;
+    margin: 10px auto;
+}
+
+.align-center {
+    width: 60px;
+    margin: 27px auto;
+}
+
+#success_message{ 
+	display: none;
+}
+
+/******************************************************
+ 				Header Styling
+ ******************************************************/
+
+header{
+	background-image: url('../img/pattern.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/*min-width: 400px;*/
+	/*max-height: 540px;*/
+}
+/*------- Top Bar --------*/
+#Top_bar{
+	max-height: 40px;
+	text-align: center;
+	height: 40px;
+	vertical-align: middle;
+	background: #fff;
+}
+
+#Top_bar h2{
+	text-transform: uppercase;
+	font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+div#Menu_bar {
+    padding: 0px 50px;
+}
+
+/*-------- Menu ---------*/
+.navbar.navbar-transparent {
+	border-width: 0px;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	background-color: rgba(0,0,0,0.0);
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+#Menu_bar .navbar-nav li.nav-item a{
+	font-family: 'Lato', sans-serif;;
+	font-size: 0.9em;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+
+.dropdown-item {
+    color: #212529 !important;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.dropdown-item:last-child{
+	border-bottom: 0px solid #ccc;
+}
+
+ul.navbar-nav.mr-auto {
+    padding-left: 50px;
+}
+
+.nav-login-sec ul.navbar-nav.mr-auto{
+	padding-left: 10px;
+}
+
+.nav-login-sec ul li{
+	padding: 0px 10px 
+}
+
+li.nav-item.btn-outline-success.my-2 {
+    width: 118px;
+    height: 41px;
+    border-radius: 13px;
+    border: solid 1px #ffffff;
+}
+
+/*----------- Banner -------------*/
+div#Banner-sec {
+    color: #fff;
+    text-align: center;
+    padding: 86px 0px 146px;
+}
+
+#Banner-sec h1, #Banner-sec h4{
+	color: #fff;
+	margin-bottom: 30px;
+	font-weight: bolder;
+}
+
+#Banner-sec h4{
+	font-weight: 300;
+	font-size: 1em;
+	margin-bottom: 3px;
+}
+
+.btn-try-it-free{
+	width: 68%;
+	height: 39px;
+	border-radius: 19px;
+	background-color: #ff500f;
+	box-shadow: 0px 12px 46px 0 rgba(0, 0, 0, 0.38);
+	color: #fff;
+	text-align: center;
+	margin: 14px auto 30px;
+	text-transform: uppercase;
+	font-size: 1em;
+	vertical-align: middle;
+	line-height: 36px;
+}
+
+.ReFerGap-how-it-works #Menu_bar {
+    padding: 0px 50px;
+    background: #a50b1c;
+}
+
+/*******************************************************
+					 Main Content
+ *******************************************************/
+section.main-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-height: 80px;
+}
+.platform-work{
+	background-color: #f5f5f5;
+	object-fit: contain;
+	display: block;
+	vertical-align: middle;
+	padding: 15px 0px 6px;
+}
+
+.platform-img,.platform-txt {
+    display: table-cell;
+}
+
+.platform-work p{
+	font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #7b8992;
+	vertical-align: middle;
+}
+
+ul.platform-list {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.platform-list li{
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0px 46px;
+}
+
+.camp-templ {
+    text-align: center;
+    padding: 65px 0px;
+}
+
+.cont-sec-ref p{
+	font-size: 0.9em;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #7b8992;
+	padding: 20px 25px;
+}
+
+.btn-get-started{
+	width: 219px;
+	height: 35px;
+	border-radius: 16.3px;
+	background-color: #ff500f;
+	box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.21);
+	font-size: 0.95em;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	padding: 9px 62px;
+}
+
+#RG-content-1, #RG-content-2, #RG-content-3{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#RG-content-2{
+	padding: 40px 0px;
+}
+
+#rg-box-1 {
+	background-image: url("../img/pattern_copy.png");	
+}
+
+#rg-box-2 {
+	background-image: url("../img/pattern_cop2.png");	
+}
+
+#rg-box-3 {
+	background-image: url("../img/pattern-scopy.png");	
+	/*background-image: linear-gradient(264deg, #9e031a, #e9490e, #9e031a, #c81720);*/
+}
+
+.box-sec{
+	width: 83%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    min-height: 205px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.box-sec h5{
+	font-size: 1.52em;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.11;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+
+.divider-sec {
+    width: 100%;
+    padding: 48px;
+}
+
+.cont-sec-ref, .cont-sign-up-ref, .temp-title {
+    text-align: center;
+}
+
+.box-sec p{
+	font-size: 0.9em;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
+
+.box-sec a{
+	font-family: Lato;
+	font-size: 0.9em;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+}
+
+#refr-a-fren p{
+	font-size: 1em;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #7b8992;
+	margin-bottom: 20px;
+}
+
+#refr-a-fren{
+	padding: 104px 46px 123px 118px;
+}
+
+#refer-sec-right img{
+	width: 100%;
+}
+
+#RG-content-4,#RG-content-5{
+	background-image: url("../img/pattern1.png");
+}
+
+.cont-sign-up-ref h2, .cont-sign-up-ref p{
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.cont-sign-up-ref p{
+	margin-bottom: 40px;
+	font-weight: 300;
+}
+
+/*******************************************************
+ 						Footer
+ *******************************************************/
+#Footer {
+    background-color: #fff;
+    padding: 16px 0px 2px;
+}
+
+#Footer p{
+	font-size: 0.9em;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #7b8992;
+} 
+
+.social-links{
+	list-style-type: none;
+	text-align: right;
+}
+
+.social-links li{
+	display: inline-block;
+	padding: 0px 10px;
+	color: #7b8992;
+}
+
+.social-links li a{
+	color: #7b8992;
+
+}
+
+/*=============================================================================*
+ *				    		CSS BASED ON PAGE TYPE 				  			   *
+ *=============================================================================*/
+
+/*-------------- How it Works styling -------------------*/
+
+#refr-a-fren h5{
+	color: #a50b1b;
+	margin-bottom: 1.5em;
+} 
+
+.ReFerGap-how-it-works #refr-a-fren{
+	padding-top: 135px;
+}
+
+.ReFerGap-how-it-works #RG-content-2{
+	padding-bottom: 0px;
+}
+
+.ReFerGap-how-it-works #RG-content-3{
+	background-image: url("../img/Rectangle_copy.png");	
+	margin-top: -71px;
+}
+
+#RG-content-3 h5, #RG-content-3 p{
+	color: #fff;
+	text-align: left;
+	padding: 0px 69px; 
+	margin-bottom: 30px;
+}
+
+.prom-img {
+	text-align: center;
+}
+
+.ReFerGap-how-it-works #RG-content-4{
+	background-image: none;
+}
+
+.ReFerGap-how-it-works #RG-content-4 .cont-sec-ref h2{
+	color: #2f394e;
+    font-size: 2.1em;
+}
+
+.ReFerGap-how-it-works #rg-box-1 {
+	background-image: url("../img/image-2.png");	
+}
+
+.ReFerGap-how-it-works #rg-box-2 {
+	background-image: url("../img/image-3.png");	
+}
+
+.ReFerGap-how-it-works #rg-box-3 {
+	background-image: url("../img/image4.png");	
+	/*background-image: linear-gradient(264deg, #9e031a, #e9490e, #9e031a, #c81720);*/
+}
+
+.ReFerGap-how-it-works .box-sec {
+    width: 100%;    
+    min-height: 298px;   
+}
+
+/*---------------------- Sign Up ---------------------*/
+
+.logo-sectiom {
+    margin-bottom: 27px;
+}
+
+#page-id-3 #Banner-sec{
+	padding: 30px 0px 38px;
+}
+
+form#contact_form label {
+    font-family: 'Lato', sans-serif;	
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+	color: #2f394e;
+}
+
+form#contact_form {
+    width: 92%;
+    margin: auto;
+    text-align: left;    
+}
+
+form#contact_form .form-inner{
+	border-radius: 5px;
+  	background-color: #ffffff;
+  	box-shadow: 4.4px 2.3px 35px 0 rgba(0, 0, 0, 0.36);
+  	padding: 20px;
+  	margin-bottom: 20px;
+}
+
+#page-id-3 .divider-sec {
+    padding: 19px;
+}
+
+
+form#contact_form input.form-control {
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    padding-left: 0px;
+    font-size: 0.8em;
+}
+
+.ReFerGap-sign-up .btn-try-it-free{
+	border: 0px;
+	width: 100%;
+}
+
+#contact_form p {
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.6px;
+}
+
+#contact_form p a, .last-log p a{
+	text-decoration: underline;
+	color: #fff
+}
+
+.last-log p{
+	text-align: center;
+}
+
+/*------------------------ Our Integrations -----------------------*/
+
+#page-id-5 #Banner-sec h1{
+	width: 100%;
+    font-size: 3em;
+}
+
+#page-id-5 #Banner-sec h4{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#page-id-5 .btn-try-it-free {
+    width: 30%;
+}
+
+#page-id-5 h2.temp-title {
+    color: #2f394e;
+    font-size: 2.2em;
+    line-height: 1.4em;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.box-sec-tool{
+	width: 220px;
+	height: 100px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 2.6px 4.3px 15px 0 rgba(0, 0, 0, 0.06);
+	margin: 0px auto;
+	text-align: center;
+}
+
+.box-sec-tool-des{
+	padding: 20px 2px;
+	text-align: center;
+	width: 200px;
+	margin:auto;
+	font-size: 14px;
+	padding-bottom: 40px;
+}
+
+.box-sec-tool-des p{
+	color: #7b8992;
+}
+
+.box-sec-tool-des a{
+	color: #a50b1b;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.align-img-middle{
+	width: 220px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100px;
+	text-align: center;
+}
+
+#page-id-5 #Footer {
+    border-top: 1px solid #ccc;
+}
+
+
+
+

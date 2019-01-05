@@ -1,0 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./app/css/style.css');
+@import url('./app/css/menu-style.css');
+@import url('./app/css/responsive.css');
