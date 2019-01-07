@@ -50,7 +50,7 @@
 		                		</div>
 		                	</div>		                    
 		                    <div class="row">
-		                    	<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+		                    	<div class="well form-horizontal"  id="contact_form">
 									<fieldset>
 										<div class="form-inner">
 											<!-- Form Name -->
@@ -58,7 +58,7 @@
 												<label class="col-md-12 control-label">Username</label>  
 												<div class="col-md-12 inputGroupContainer">
 												    <div class="input-group">
-													    <input  name="user_name" placeholder="Username" class="form-control"  type="text">
+													    <input id="name" name="user_name" placeholder="Username" class="form-control"  type="text">
 													</div>
 												</div>
 											</div>
@@ -67,7 +67,7 @@
 												<label class="col-md-12 control-label">E-Mail</label>  
 											    <div class="col-md-12 inputGroupContainer">
 												    <div class="input-group">
-											  			<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+											  			<input id="email" name="email" placeholder="E-Mail Address" class="form-control"  type="text">
 											    	</div>
 												</div>
 											</div>
@@ -76,7 +76,7 @@
 											    <label class="col-md-12 control-label" >Password</label> 
 											    <div class="col-md-12 inputGroupContainer">
 												    <div class="input-group">
-												    	<input name="user_password" placeholder="Password" class="form-control"  type="password">
+												    	<input #password  id="password" name="user_password" placeholder="Password" class="form-control"  type="password">
 												    </div>
 											  	</div>
 											</div>
@@ -85,7 +85,7 @@
 												<label class="col-md-12 control-label" >Confirm Password</label> 
 											    <div class="col-md-12 inputGroupContainer">
 											    	<div class="input-group">
-											  			<input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
+											  			<input id="cpassword" name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
 											   		</div>
 												</div>
 											</div>			
@@ -99,11 +99,11 @@
 										<!-- Button -->
 										<div class="form-group">
 										    <div class="col-md-12">
-										     	<button type="submit" class="btn-try-it-free" > Sign Up </button>
+										     	<button (click)="submit(password)" type="submit" class="btn-try-it-free" > Sign Up </button>
 										    </div>
 										</div>
 									</fieldset>
-								</form>
+								</div>
 							</div>
 		                    <div class="row">
 								<div class="col-sm-12">
