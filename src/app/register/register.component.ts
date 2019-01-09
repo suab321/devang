@@ -11,6 +11,10 @@ export class RegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+
     var name=document.getElementById("name");
     var email=document.getElementById("email");
     var password=document.getElementById("password");
