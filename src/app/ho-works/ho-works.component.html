@@ -40,59 +40,7 @@
        <!-- #Tob_bar -->
 		<app-header></app-header>
 		<!-- Start: .main-header -->
-      	<header class="main-header">
-	        <!-- Navigation -->
-	        <div id="Menu_bar">
-	          	<div class="container-fluid">
-	            	<div class="row">
-		              	<div class="col-sm-9">
-			                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-			                    <a class="navbar-brand" href="#"><img src="../assets/Logo.png" alt="Refergap" /></a>
-			                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			                    	<span class="navbar-toggler-icon"></span>
-			                    </button>
-			                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				                    <ul class="navbar-nav mr-auto">
-				                        <li class="nav-item active">
-				                          	<a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
-				                        </li>
-				                        <li class="nav-item">
-				                          	<a class="nav-link" href="/howitworks">How it works</a>
-				                        </li>
-				                        <li class="nav-item dropdown">
-				                         	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				                            	Templates
-				                         	</a>
-				                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				                            	<a class="dropdown-item" href="#">Action</a>
-				                            	<a class="dropdown-item" href="#">Another action</a>
-				                            	<a class="dropdown-item" href="#">Something else here</a>
-				                            </div>
-				                        </li>
-				                    </ul>
-			                    </div>
-			                </nav>
-		              	</div>
-			            <div class="col-sm-3">
-			                <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-login-sec">
-				                <div class="collapse navbar-collapse" id="navbarContent">                
-				                    <ul class="navbar-nav mr-auto">
-				                        <li class="nav-item active">
-					                        <a class="nav-link" href="/signin">
-					                            Sign In
-					                        </a>
-				                        </li>
-				                        <li class="nav-item btn-outline-success my-2 my-sm-0 pull-right">
-				                          	<a class="nav-link" href="/signup">Sign Up</a>
-				                        </li>
-				                    </ul>
-				                </div>  
-			                </nav>
-			            </div>  
-	            	</div>
-	          	</div>
-	        </div>
-      	</header>
+      	<app-main-header2></app-main-header2>
       	<!-- End: .main-header -->
       	<!-- Start: #Content -->
 		<div id="Content" class="main-page-container">
@@ -242,33 +190,9 @@
 					</div>
 				</div>
 			</section>
-			<section id="RG-content-5" class="content-section-last-top">
-				<div class="refer-sign-up">
-				    <div class="container">
-					    <div class="row">
-					        <div class="divider-sec"></div>
-					    </div>
-				      	<div class="row">
-				        	<div class="col-sm-1"></div>
-					        <div class="col-sm-10">
-					          	<div class="cont-sign-up-ref">
-						            <h2 class="temp-title">
-						             Sign Up
-						            </h2>
-						            <p>
-						              Lorem ipsum dolor sit amet, in erat moderatius est, mea te consetetur contentiones. Vis laboramus percipitur disputationi ea, qui inani contentiones ut. Iusto veniam nullam ut sit, mea ex ceteroLorem ipsum dolor sit amet, in erat moderatius est, mea te consetetur contentiones. Vis laboramus percipitur disputationi ea
-						            </p>
-						            <a href="#" class="btn-get-started">GET STARTED</a>
-					         	</div>  
-					        </div>
-					        <div class="col-sm-1"></div>
-				      	</div>
-				       	<div class="row">
-				        	<div class="divider-sec"></div>
-				      	</div>
-				    </div>
-				</div>
-			</section>
+			<section id="RG-content-5" class="content-section-middle-foot">
+			<app-prefooter></app-prefooter>
+		</section>
 		</div>  <!-- End: #Content -->
         <!-- Footer --->
        <app-footer></app-footer>

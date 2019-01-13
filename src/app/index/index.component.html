@@ -42,91 +42,7 @@
        <!-- #Tob_bar -->
 
       <app-header></app-header>
-      <header class="main-header">
-        <!-- Navigation -->
-        <div id="Menu_bar">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-9">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                    <a class="navbar-brand" href="/index"><img src="../assets/Logo.png" alt="Refergap" /></a>
-                    <div id="app"></div>
-
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button> -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/howitworks">How it works</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Templates
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                </nav>
-              </div>
-              <div class="col-sm-3">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-login-sec">
-                  <div class="collapse navbar-collapse" id="navbarContent">                
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="/signin">
-                            Sign In
-                          </a>
-                        </li>
-                        <li class="nav-item btn-outline-success my-2 my-sm-0 pull-right">
-                          <a class="nav-link" href="/signup">Sign Up</a>
-                        </li>
-                    </ul>
-                  </div>  
-                </nav>
-              </div>  
-            </div>
-          </div>
-        </div>
-        <div id="Banner-sec">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3"></div>
-              <div class="col-sm-6">
-                <div class="banner-content">
-                  <div class="row">
-                    <h1 class="banner-title">
-                      Filling Marketing Gaps
-                      with Referrals
-                    </h1>
-                  </div>
-                  <div class="row">
-                    <h4 class="banner-tex">
-                      We FillGappers designed a templated based viral & referral marketing
-                      solution for modern businesses
-                    </h4>
-                  </div>
-                  <div class="row">
-                    <a class="btn-try-it-free" href="#">     
-                        Start Refering Today For Free
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3"></div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <app-main-header></app-main-header>
       <!-- Page Content -->
       <div id="Content" class="main-page-container">
         <section id="RG-content-1" class="content-section-top">
@@ -177,21 +93,21 @@
                 <div class="divider-sec"></div>
               </div>
               <div class="row">
-                <div class="col-sm-4">
+                <div (click)="goto('ecommercereferal')" class="col-sm-4">
                   <div id="rg-box-1" class="box-sec">
                     <h5>The eCommerce Referral</h5>
                     <p>debitis percipit an pro, mei duis vocent invenire</p>
                     <a href="#">inspired by Gilt</a>
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div (click)="goto('friendreferal')" class="col-sm-4">
                   <div id="rg-box-2" class="box-sec">
                     <h5>Refer a Friend</h5>
                     <p>Lorem ipsum dolor sit amet, debitis percipit an pro, mei duis vocent invenire</p>
                     <a href="#">inspired by Dropbox</a>
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div (click)="goto('milestonereferal')" class="col-sm-4">
                   <div id="rg-box-3" class="box-sec">
                     <h5>The Milestone Referral</h5>
                     <p>debitis percipit an pro, mei duis vocent invenire</p>

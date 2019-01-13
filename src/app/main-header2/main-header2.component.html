@@ -1,0 +1,50 @@
+<header class="main-header">
+  <!-- Navigation -->
+  <div id="Menu_bar">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9">
+              <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                  <a class="navbar-brand" href="#"><img src="../assets/Logo.png" alt="Refergap" /></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/howitworks">How it works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <select value="Template" style="background:transparent;border:transparent;color:white;" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="goto($event)" name="Template">Template
+                             <option (click)="goto('milestonereferal')" style="background:transparent;border:transparent;color:black;" value="milestonereferal">MileStone Referal</option>
+                              <option  (click)="goto('friendreferal')" style="background:transparent;border:transparent;color:black;" value="friendreferal">Refera a friend</option>
+                             <option  (click)="goto('ecommercereferal')" style="background:transparent;border:transparent;color:black;" value="ecommercereferal">The eCommercial Referal</option>
+                            </select>
+                          </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          <div class="col-sm-3">
+              <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-login-sec">
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/signin">
+                              Sign In
+                          </a>
+                        </li>
+                        <li class="nav-item btn-outline-success my-2 my-sm-0 pull-right">
+                            <a class="nav-link" href="/signup">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+        </div>
+      </div>
+  </div>
+</header>

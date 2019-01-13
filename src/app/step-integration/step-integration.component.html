@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Refergap is a viral and referral marketing platform to launch ranking competitions, sweepstakes, pre-launch and referral programs.">
+	<meta property="og:type" content="referral" />
+	<meta property="og:title" content="Refergap" />
+	<meta property="og:description" content="Refergap is a viral and referral marketing platform to launch ranking competitions, sweepstakes, pre-launch and referral programs." />
+	<meta property="og:site_name" content="Refergap" />
+	<meta property="og:image" content="http://refergap.com/images/logo.png" />
+	<meta property="og:image:width" content="512" />
+	<meta property="og:image:height" content="512" />
+	<meta name="twitter:text:title" content="Refergap" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="Visit the post for more." />
+
+	<link href="http://refergap.com/favicon.ico" rel="icon" sizes="32x32" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link href="http://refergap.com/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Latest compiled and minified CSS -->
+
+	<meta name="author" content="DevGap Crew">
+
+	<title>ReferGap</title>
+
+	<!-- Bootstrap core CSS -->
+	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- jQuery library -->
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/custom.js"></script>
+
+  </head>
+  <body id="page-id-2" class="ReFerGap-how-it-works">
+
+       <!-- #Tob_bar -->
+		<app-header></app-header>
+		<!-- Start: .main-header -->
+        <app-loggedheader></app-loggedheader><br><br><br><br><br><br>
+        <div [ngSwitch]="tab">
+          <div *ngSwitchCase="1">
+              <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                  <tr>
+                      <td (click)="info()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;background-color: orangered">Info</td>
+                      <td (click)="reward()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Rewarding</td>
+                      <td (click)="widget()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Widget</td>
+                      <td (click)="noti()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Notification</td>
+                      <td (click)="inte()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Integration</td>
+                      <td (click)="install()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Installation</td>
+                    </tr>
+                  </table><br><br><br><br>
+                  <app-info></app-info>
+                </div>
+                <div *ngSwitchCase="5">
+                    <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                        <tr>
+                            <td (click)="info()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Info</td>
+                            <td (click)="reward()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Rewarding</td>
+                            <td (click)="widget()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Widget</td>
+                            <td (click)="noti()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Notification</td>
+                            <td (click)="inte()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;background-color: orangered">Integration</td>
+                            <td (click)="install()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Installation</td>
+                          </tr>
+                        </table><br><br><br><br>
+          <app-stepintegrationtab></app-stepintegrationtab>
+            </div>
+            <div *ngSwitchCase="2">
+                <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                    <tr>
+                        <td (click)="info()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Info</td>
+                        <td (click)="reward()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;background-color: orangered">Rewarding</td>
+                        <td (click)="widget()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Widget</td>
+                        <td (click)="noti()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Notification</td>
+                        <td (click)="inte()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Integration</td>
+                        <td (click)="install()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Installation</td>
+                      </tr>
+                    </table><br><br><br><br>
+                    <app-rewardc></app-rewardc>
+        </div>
+        <div *ngSwitchCase="3">
+            <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                <tr>
+                    <td (click)="info()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Info</td>
+                    <td (click)="reward()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Rewarding</td>
+                    <td (click)="widget()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;background-color: orangered">Widget</td>
+                    <td (click)="noti()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Notification</td>
+                    <td (click)="inte()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Integration</td>
+                    <td (click)="install()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Installation</td>
+                  </tr>
+                </table><br><br><br><br>
+                <app-widget></app-widget>
+    </div>
+    <div *ngSwitchCase="4">
+        <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+            <tr>
+                <td (click)="info()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Info</td>
+                <td (click)="reward()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Rewarding</td>
+                <td (click)="widget()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Widget</td>
+                <td (click)="noti()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;background-color: orangered">Notification</td>
+                <td (click)="inte()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center;">Integration</td>
+                <td (click)="install()" style="font-family: sans-serif grey;color:grey;width:14%;border-right:1px solid grey;text-align:center">Installation</td>
+              </tr>
+            </table><br><br><br><br>
+            <app-notification></app-notification>
+    </div>
+  </div>
+        <br><br><div class="form-group">
+            <div class="col-md-12" style="white-space:nowrap;text-align: center;">
+              <button style="background-color: transparent;width:10%;color:grey;" class="btn-try-it-free"(click)="prev()"> Previous </button>
+               <button style="width:10%;margin-left:12%;" class="btn-try-it-free"(click)="next()"> Next </button>
+            </div>
+        </div>
+      	<!-- End: .main-header -->
+      	<!-- Start: #Content -->
+		  <!-- End: #Content -->
+        <!-- Footer --->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <app-footer></app-footer>
+
+</html>

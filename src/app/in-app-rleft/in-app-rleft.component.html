@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Refergap is a viral and referral marketing platform to launch ranking competitions, sweepstakes, pre-launch and referral programs.">
+	<meta property="og:type" content="referral" />
+	<meta property="og:title" content="Refergap" />
+	<meta property="og:description" content="Refergap is a viral and referral marketing platform to launch ranking competitions, sweepstakes, pre-launch and referral programs." />
+	<meta property="og:site_name" content="Refergap" />
+	<meta property="og:image" content="http://refergap.com/images/logo.png" />
+	<meta property="og:image:width" content="512" />
+	<meta property="og:image:height" content="512" />
+	<meta name="twitter:text:title" content="Refergap" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="Visit the post for more." />
+
+	<link href="http://refergap.com/favicon.ico" rel="icon" sizes="32x32" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<link href="http://refergap.com/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Latest compiled and minified CSS -->
+
+	<meta name="author" content="DevGap Crew">
+
+	<title>ReferGap</title>
+
+	<!-- Bootstrap core CSS -->
+	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	
+	<!-- jQuery library -->
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/custom.js"></script>
+
+  </head>
+  <body id="page-id-2" class="ReFerGap-how-it-works">
+    
+       <!-- #Tob_bar -->
+            <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                <fieldset [hidden]='hideglobalstate'>
+                    <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                        <tr>
+                            <td style="font-family: sans-seri;color:white;width:28%;border-right:1px solid grey;text-align:center;background-color: orangered;font-size: 1em;" (click)="showformstate()">GlobalOPtion</td>
+                            <td style="font-family: sans-serif grey;color:orangered;width:28%;border-right:1px solid grey;text-align:center;font-size: 1em;" (click)="showinvitestate()">InviteTab</td>
+                            <td style="font-family: sans-serif grey;color:orangered;width:28%;border-right:1px solid grey;text-align:center;font-size: 1em;" (click)="showrewardstate()">RewardTab</td>
+                          </tr>
+                        </table>
+                  <div class="form-inner">
+                    <!-- Form Name -->
+                    <div class="form-group">
+                      <label class="col-md-12 control-label">Heading</label>  
+                      <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input  name="user_name" placeholder="Invite Your Friends" class="form-control"  type="text">
+                        </div>
+                      </div>
+                    </div>										
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" >SubHeaing</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="Win prizes" class="form-control"  type="text">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" >SubHeaing</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="Win prizes" class="form-control"  type="text">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" >SubHeaing</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="first name" class="form-control"  type="text">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" >SubHeaing</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="Your last name" class="form-control"  type="text">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" >email</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="email" class="form-control"  type="text">
+                          </div>
+                        </div>
+                    </div>														
+                  </div>						
+                  <!-- Select Basic -->
+                  <!-- Success message -->
+                  <div class="alert alert-success" role="alert" id="success_message">Success <i class="fas fa-thumbs-up"></i> Success!.</div>
+                   <p>
+                              By signing-up you agree to our <a href="#"> Terms & Conditions</a>
+                            </p>
+                  <!-- Button -->
+                  <div class="form-group">
+                      <div class="col-md-12" style="white-space:nowrap;">
+                        <button style="background-color: transparent;width:40%;color:grey;" class="btn-try-it-free"> Cancel </button>
+                         <button style="width:40%;" class="btn-try-it-free"> Save </button>
+                      </div>
+                  </div>
+                </fieldset>
+
+
+
+
+                <fieldset [hidden]='hideinvitestate'>
+                      <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                          <tr>
+                              <td style="font-family: sans-seri;color:orangered;width:28%;border-right:1px solid grey;text-align:center;font-size: 1em;" (click)="showglobalstate()">GlobalState</td>
+                              <td style="font-family: sans-serif;color:white;width:28%;border-right:1px solid grey;text-align:center;background-color: orangered;font-size: 1em;" (click)="showinvitestate()">InviteState</td>
+                              <td style="font-family: sans-serif;color:orangered;width:28%;border-right:1px solid grey;text-align:center;" (click)="showrewardstate()">RewardState</td>
+                            </tr>
+                          </table>
+                    <div class="form-inner">
+                      <!-- Form Name -->
+                      <div class="form-group">
+                        <label class="col-md-12 control-label">Heading</label>  
+                        <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                              <input  name="user_name" placeholder="Invite Your Friends" class="form-control"  type="text">
+                          </div>
+                        </div>
+                      </div>										
+                      <!-- Text input-->
+                      <div class="form-group">
+                          <label class="col-md-12 control-label" >Title</label> 
+                          <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                              <input name="user_password" placeholder="Join our campaign" class="form-control"  type="text">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-md-12 control-label" >Description</label> 
+                          <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                              <input name="user_password" placeholder="description" class="form-control"  type="text">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-md-12 control-label" >Website name</label> 
+                          <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                              <input name="user_password" placeholder="ABCD" class="form-control"  type="text">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <form>
+                            <input style="border-radius:20%;" type='file'>
+                            <button style="border-radius: 20%;" type='submit'>Upload</button>
+                          </form>
+                      </div>
+                      <div class="form-group">
+                          <label class="switch">
+                              <input style="font-size:100px;" type="checkbox">
+                              <span class="slider round"></span>
+                            </label>facebook<i class="fas fa-facebook"></i>
+                            <br>
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                            </label>Twitter<i class="fas fa-facebook"></i>
+                            <br>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>Twitter<i class="fas fa-facebook"></i><br>
+                              <label>Add Invitee</label><br>
+                              <div class="form-group">
+                                  <label class="col-md-12 control-label" >Website name</label> 
+                                  <div class="col-md-12 inputGroupContainer">
+                                    <div class="input-group">
+                                      <input name="user_password" placeholder="ABCD" class="form-control"  type="text">
+                                    </div>
+                                  </div>
+                              </div>
+                                  <label class="switch">
+                                  <input type="checkbox" checked>
+                                  <span class="slider round"></span>
+                                </label>EMAIL<i class="fas fa-facebook"></i><br>
+                              <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>REDDIT<i class="fas fa-facebook"></i>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Subject</label> 
+                            <div class="col-md-12 inputGroupContainer">
+                              <div class="input-group">
+                                <input name="user_password" placeholder="skbffgg" class="form-control"  type="text">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label">Body</label> 
+                            <div class="col-md-12 inputGroupContainer">
+                              <div class="input-group">
+                                <input name="user_password" placeholder="bvffbbhvf" class="form-control"  type="text">
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="form-group">
+                              <label class="switch">
+                                  <input style="font-size:100px;" type="checkbox" (click)="enable()">
+                                  <span class="slider round"></span>
+                                </label>Copy viral link
+                                <br>
+                            </div>
+
+                            <div class="form-group" [hidden]="hidelink">
+                                <label class="col-md-12 control-label">Link</label> 
+                                <div class="col-md-12 inputGroupContainer">
+                                  <div class="input-group">
+                                    <input name="user_password" placeholder="bvffbbhvf" class="form-control"  type="text">
+                                  </div>
+                                </div>
+                              </div>
+
+                      <div class="form-group">
+                          <div class="col-md-12" style="white-space:nowrap;">
+                            <button style="background-color: transparent;width:40%;color:grey;" class="btn-try-it-free"> Cancel </button>
+                             <button style="width:40%;" class="btn-try-it-free"> Save </button>
+                          </div>
+                      </div>
+                      				
+                    </div>						
+                    <!-- Select Basic -->
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="fas fa-thumbs-up"></i> Success!.</div>
+                     <p>
+                                By signing-up you agree to our <a href="#"> Terms & Conditions</a>
+                              </p>
+                    <!-- Button -->
+                  </fieldset>
+
+
+
+
+                  <fieldset [hidden]='hiderewardstate'>
+                      <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                          <tr>
+                              <td style="font-family: sans-seri;color:orangered;width:28%;border-right:1px solid orangered;text-align:center;font-size: 1em;" (click)="showglobalstate()">GlobalState</td>
+                              <td style="font-family: sans-serif;color:orangered;width:28%;border-right:1px solid orangered;text-align:center;" (click)="showinvitestate()">InviteState</td>
+                              <td style="font-family: sans-serif;color:white;width:28%;border-right:1px solid grey;text-align:center;background-color: orangered;font-size: 1em;" (click)="showrewardstate()">RewardState</td>
+                            </tr>
+                          </table>
+                    <div class="form-inner">
+                      <!-- Form Name -->
+                      <div class="form-group">
+                        <label class="col-md-12 control-label">Information Message</label>  
+                        <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                              <input  name="user_name" placeholder="Invite Your Friends" class="form-control"  type="text">
+                          </div>
+                        </div>
+                      </div>										
+                      <!-- Text input-->
+                      <div class="form-group">
+                          <label class="col-md-12 control-label" >Pending Reward Label</label> 
+                          <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                              <input name="user_password" placeholder="Join our campaign" class="form-control"  type="text">
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label class="col-md-12 control-label">Text Displayed when no rewards added</label>  
+                          <div class="col-md-12 inputGroupContainer">
+                              <div class="input-group">
+                                <input  name="user_name" placeholder="Invite Your Friends" class="form-control"  type="text">
+                            </div>
+                          </div>
+                        </div>	
+
+                      <div class="form-group">
+                          <div class="col-md-12" style="white-space:nowrap;">
+                            <button style="background-color: transparent;width:40%;color:grey;" class="btn-try-it-free"> Cancel </button>
+                             <button style="width:40%;" class="btn-try-it-free"> Save </button>
+                          </div>
+                      </div>
+                      				
+                    </div>						
+                    <!-- Select Basic -->
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="fas fa-thumbs-up"></i> Success!.</div>
+                     <p>
+                                By signing-up you agree to our <a href="#"> Terms & Conditions</a>
+                              </p>
+                    <!-- Button -->
+                  </fieldset>
+                </form>
+          
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
+

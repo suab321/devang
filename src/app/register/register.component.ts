@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Md5} from 'ts-md5/dist/md5';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +9,7 @@ import {Md5} from 'ts-md5/dist/md5';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
 
@@ -39,7 +40,7 @@ export class RegisterComponent implements OnInit {
   submit(e){
     const hash=new Md5();
     console.log(hash.appendStr(e.value).end());
-
+    this.router.navigateByUrl('stepintegration');
   }
 
 }

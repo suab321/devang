@@ -1,0 +1,240 @@
+<div class='row' style="margin-top:2em;">
+    <div class="col-sm-6">
+        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+            <fieldset [hidden]='hideformstate'>
+                <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                    <tr>
+                        <td style="font-family: sans-seri;color:white;width:42%;border-right:1px solid grey;text-align:center;background-color: orangered;font-size: 1em;" (click)="showformstate()">FormState</td>
+                        <td style="font-family: sans-serif grey;color:grey;width:42%;border-right:1px solid grey;text-align:center;font-size: 1em;" (click)="showsharingstate()">SharingState</td>
+                      </tr>
+                    </table>
+              <div class="form-inner">
+                <!-- Form Name -->
+                <div class="form-group">
+                  <label class="col-md-12 control-label">Heading</label>  
+                  <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <input  name="user_name" placeholder="Invite Your Friends" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>										
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-12 control-label" >SubHeaing</label> 
+                    <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <input name="user_password" placeholder="Win prizes" class="form-control"  type="text">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-12 control-label" >SubHeaing</label> 
+                    <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <input name="user_password" placeholder="Win prizes" class="form-control"  type="text">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-12 control-label" >SubHeaing</label> 
+                    <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <input name="user_password" placeholder="first name" class="form-control"  type="text">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-12 control-label" >SubHeaing</label> 
+                    <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <input name="user_password" placeholder="Your last name" class="form-control"  type="text">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-12 control-label" >email</label> 
+                    <div class="col-md-12 inputGroupContainer">
+                      <div class="input-group">
+                        <input name="user_password" placeholder="email" class="form-control"  type="text">
+                      </div>
+                    </div>
+                </div>														
+              </div>						
+              <!-- Select Basic -->
+              <!-- Success message -->
+              <div class="alert alert-success" role="alert" id="success_message">Success <i class="fas fa-thumbs-up"></i> Success!.</div>
+               <p>
+                          By signing-up you agree to our <a href="#"> Terms & Conditions</a>
+                        </p>
+              <!-- Button -->
+              <div class="form-group">
+                  <div class="col-md-12" style="white-space:nowrap;">
+                      <button style="background-color: transparent;width:40%;color:grey;" class="btn-try-it-free"> Cancel </button>
+                       <button style="width:40%;" class="btn-try-it-free"> Save </button>
+                    </div>
+              </div>
+            </fieldset>
+
+
+
+
+            <fieldset [hidden]='hideformstate' [hidden]="hidesharingstate">
+                  <table style="width:84%;border: 1px solid orange;margin-left:10%;box-shadow: 5px 10px #c3c0c0;" >
+                      <tr>
+                          <td style="font-family: sans-seri;color:grey;width:42%;border-right:1px solid grey;text-align:center;font-size: 1em;" (click)="showformstate()">FormState</td>
+                          <td style="font-family: sans-serif;color:white;width:42%;border-right:1px solid grey;text-align:center;background-color: orangered;font-size: 1em;" (click)="showsharingstate()">SharingState</td>
+                        </tr>
+                      </table>
+                <div class="form-inner">
+                  <!-- Form Name -->
+                  <div class="form-group">
+                    <label class="col-md-12 control-label">Heading</label>  
+                    <div class="col-md-12 inputGroupContainer">
+                        <div class="input-group">
+                          <input  name="user_name" placeholder="Invite Your Friends" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>										
+                  <!-- Text input-->
+                  <div class="form-group">
+                      <label class="col-md-12 control-label" >Title</label> 
+                      <div class="col-md-12 inputGroupContainer">
+                        <div class="input-group">
+                          <input name="user_password" placeholder="Join our campaign" class="form-control"  type="text">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-md-12 control-label" >Description</label> 
+                      <div class="col-md-12 inputGroupContainer">
+                        <div class="input-group">
+                          <input name="user_password" placeholder="description" class="form-control"  type="text">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-md-12 control-label" >Website name</label> 
+                      <div class="col-md-12 inputGroupContainer">
+                        <div class="input-group">
+                          <input name="user_password" placeholder="ABCD" class="form-control"  type="text">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <form>
+                        <input style="border-radius:20%;" type='file'>
+                        <button style="border-radius: 20%;" type='submit'>Upload</button>
+                      </form>
+                  </div>
+                  <div class="form-group">
+                      <label class="switch">
+                          <input style="font-size:100px;" type="checkbox">
+                          <span class="slider round"></span>
+                        </label>facebook<i class="fas fa-facebook"></i>
+                        <br>
+                        <label class="switch">
+                          <input type="checkbox" checked>
+                          <span class="slider round"></span>
+                        </label>Twitter<i class="fas fa-facebook"></i>
+                        <br>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>Twitter<i class="fas fa-facebook"></i><br>
+                          <label class="switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                            </label>EMAIL<i class="fas fa-facebook"></i><br>
+                          <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>REDDIT<i class="fas fa-facebook"></i>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label">Subject</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="skbffgg" class="form-control"  type="text">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12 control-label">Body</label> 
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <input name="user_password" placeholder="bvffbbhvf" class="form-control"  type="text">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label class="switch">
+                              <input style="font-size:100px;" type="checkbox" (click)="enable()">
+                              <span class="slider round"></span>
+                            </label>Copy viral link
+                            <br>
+                        </div>
+
+                        <div class="form-group" [hidden]="hidelink">
+                            <label class="col-md-12 control-label">Link</label> 
+                            <div class="col-md-12 inputGroupContainer">
+                              <div class="input-group">
+                                <input name="user_password" placeholder="bvffbbhvf" class="form-control"  type="text">
+                              </div>
+                            </div>
+                          </div>
+
+                  <div class="form-group">
+                      <div class="col-md-12" style="white-space:nowrap;">
+                        <button style="background-color: transparent;width:40%;color:grey;" class="btn-try-it-free"> Cancel </button>
+                         <button style="width:40%;" class="btn-try-it-free"> Save </button>
+                      </div>
+                  </div>
+                          
+                </div>						
+              </fieldset>
+            </form>
+            </div>
+            <div class="col-sm-6">
+              <div>
+                  <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                      <fieldset [hidden]="hideformstate">
+                          <h1 style="text-align: center;">Invite Your Friends</h1>
+                        <div class="form-inner">
+                          <!-- Form Name -->
+                          <div class="form-group">
+                            <label class="col-md-12 control-label">Username</label>  
+                            <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                  <input  name="user_name" placeholder="FirstName" class="form-control"  type="text">
+                              </div>
+                            </div>
+                          </div>										
+                          <!-- Text input-->
+                          <div class="form-group">
+                              <label class="col-md-12 control-label" >Password</label> 
+                              <div class="col-md-12 inputGroupContainer">
+                                <div class="input-group">
+                                  <input name="user_password" placeholder="Last Name" class="form-control" type="text">
+                                </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-md-12 control-label"> Email</label>  
+                              <div class="col-md-12 inputGroupContainer">
+                                  <div class="input-group">
+                                    <input  name="user_name" placeholder="EmailAddress" class="form-control" type="email">
+                                </div>
+                              </div>
+                            </div>								
+                        </div>
+                        <div style="text-align: center;" class="form-group">
+                            <div class="col-md-12" style="white-space:nowrap;">
+                                 <button style="width:100%;" class="btn-try-it-free"> Save </button>
+                              </div>
+                        </div>
+                        </fieldset>
+                        </form>
+              </div>
+            </div>
+            </div>
